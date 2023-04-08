@@ -54,7 +54,7 @@ int eval(element *e,char exp[]) {
 			case '+': op = op1 + op2; break;
 			case '-': op = op1 - op2; break;
 			case '*': op = op1 * op2; break;
-			case '/': op1 / op2; break;
+			case '/': op = op1 / op2; break;
 			}
 			push(e, op);
 			printf("push : %d\n", op);
